@@ -19,14 +19,10 @@ function showCountriesList(resp) {
 
   function showCountriesList(resp) {
     countriesList.innerHTML = '';
-    resp.forEach(function(item) {
-        //Here is the code that will execute on each successive item in the collection. A single item is hidden under an item variable.
-    
         resp.forEach(function(item){
             var liEl = document.createElement('li');
             liEl.innerText = item.name;
             countriesList.appendChild(liEl);
         });
-    });
 }
 
